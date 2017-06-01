@@ -4,6 +4,17 @@ Unity Wrapper for the itch.io serverside API
 # licence
 See LICENCE file for licence details.
 
+# launcher integration
+In order to use the user provide by the launcher you need to provide a .itch.toml file in the base folder of the zip file you upload that includes an action with the scope set to profile:me
+
+Here is an example .itch.toml file:
+```toml
+[[actions]]
+name = "play"
+path = "mygame.exe"
+sandbox = true
+scope = "profile:me"
+```
 # usage
 ```C#
 public class Example
