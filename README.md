@@ -24,7 +24,7 @@ public class Example
     {
       userId = result.response.user.id;
       username = result.response.user.username;
-      displayname = result.response.display_name;
+      displayname = result.response.user.display_name;
       itcher.GetDownloadKeysWithUserId(result.response.user.id, myGameId, onGetDownloadKeyComplete);
       itcher.GetPurchasesWithUserId(result.response.user.id, myGameId, onGetPurchasesComplete);
     }
